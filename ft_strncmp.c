@@ -1,13 +1,15 @@
-int ft_strncmp(const char *str1, const char *str2, unsigned int num)
-{
-    unsigned int i;
+#include <libft.h>
 
-    i = 0;
-    while (i < num && (str1[i] != '\0' || str2[i] != '\0'))
-    {
-        if (str1[i] != str2[i])
-            return ((unsigned char)str1[i] - (unsigned char)str2[i]);
-        i++;
-    }
-    return (0);
+int	ft_strncmp(const char *str1, const char *str2, unsigned int num)
+{
+	unsigned int i;
+
+	i = 0;
+	while (i < num && (str1[i] != '\0' || str2[i] != '\0'))
+	{
+		if (str1[i] != str2[i])
+			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+		i++;
+	}
+	return (0);
 }
