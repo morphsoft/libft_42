@@ -2,9 +2,9 @@
 
 char	*ft_strrchr(const char *str, int character)
 {
-	const char *last_occurrence;
+	const char	*last_occurrence;
 
-	last_occurrence = (void *)0;
+	last_occurrence = NULL;
 	while (*str != '\0')
 	{
 		if (*str == (char)character)

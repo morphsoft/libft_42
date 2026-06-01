@@ -2,16 +2,16 @@
 
 char	**ft_split(const char *s, char c)
 {
-	char			**split;
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	k;
+	char	**split;
+	size_t	i;
+	size_t	j;
+	size_t	k;
 
-	if (s == (void *)0)
-		return (void *)0;
+	if (s == NULL)
+		return NULL;
 	split = (char **)malloc((ft_count_words(s, c) + 1) * sizeof(char *));
-	if (split == (void *)0)
-		return (void *)0;
+	if (split == NULL)
+		return NULL;
 	i = 0;
 	j = 0;
 	while (s[i] != '\0')
@@ -27,6 +27,27 @@ char	**ft_split(const char *s, char c)
 			i += k;
 		}
 	}
-	split[j] = (void *)0;
+	split[j] = NULL;
 	return split;
+}
+
+int	ft_count_words(const char *s, char splitter)
+{
+	size_t	count;
+	size_t	i;
+
+	count = 0;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		while (s[i] == splitter)
+			i++;
+		if (s[i] != '\0')
+		{
+			count++;
+			while (s[i] != splitter && s[i] != '\0')
+				i++;
+		}
+	}
+	return count;
 }

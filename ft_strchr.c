@@ -10,5 +10,5 @@ char	*ft_strchr(const char *str, int character)
 	}
 	if (character == '\0')
 		return ((char *)str);
-	return ((void *)0);
+	return (NULL);
 }

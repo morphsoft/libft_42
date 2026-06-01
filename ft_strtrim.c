@@ -2,9 +2,9 @@
 
 char	*ft_strtrim(const char *s1, const char *set)
 {
-	char *trimmed;
-	unsigned int start;
-	unsigned int end;
+	char		*trimmed;
+	size_t		start;
+	size_t		end;
 
 	if (s1 == (void *)0 || set == (void *)0)
 		return (void *)0;

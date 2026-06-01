@@ -2,9 +2,9 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	unsigned int i;
+	size_t	i;
 
-	if (s == (void *)0)
+	if (s == NULL)
 		return;
 	i = 0;
 	while (s[i] != '\0')

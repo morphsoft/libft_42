@@ -2,29 +2,44 @@
 
 char	*ft_itoa(int n)
 {
-	char *str;
-	int temp;
-	int len;
+	char	*str;
+	int		temp;
+	int		len;
 
 	temp = n;
-	len = (n <= 0) ? 1 : 0;
+	len = 0;
+	if (n <= 0)
+		len = 1;
 	while (temp != 0)
 	{
 		temp /= 10;
 		len++;
 	}
 	str = (char *)malloc(len + 1);
-	if (str == (void *)0)
-		return (void *)0;
+	if (str == NULL)
+		return (NULL);
 	str[len] = '\0';
+	ft_add_negative_sign_or_zero(str, n);
+	while (n != 0)
+	{
+		str[--len] = '0' + (n % 10) * ft_is_negative(n);
+		n /= 10;
+	}
+	return (str);
+}
+
+void	ft_add_negative_sign_or_zero(char *str, int n)
+{
 	if (n == 0)
 		str[0] = '0';
 	else if (n < 0)
 		str[0] = '-';
-	while (n != 0)
-	{
-		str[--len] = '0' + (n % 10) * ((n < 0) ? -1 : 1);
-		n /= 10;
-	}
-	return str;
+}
+
+int	ft_is_negative(int n)
+{
+	if (n < 0)
+		return (-1);
+	else
+		return (1);
 }

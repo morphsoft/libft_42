@@ -2,8 +2,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (lst == (void *)0 || new == (void *)0)
-		return;
+	if (lst == NULL || new == NULL)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }

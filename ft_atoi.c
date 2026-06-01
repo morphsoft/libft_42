@@ -2,9 +2,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int result;
-	int sign;
-	int i;
+	int	result;
+	int	sign;
+	int	i;
 
 	sign = 1;
 	result = 0;
@@ -22,5 +22,5 @@ int	ft_atoi(const char *str)
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
-	return result * sign;
+	return (result * sign);
 }

@@ -2,14 +2,14 @@
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
-	char *mapped;
-	unsigned int i;
+	char	*mapped;
+	size_t	i;
 
-	if (s == (void *)0 || f == (void *)0)
-		return (void *)0;
+	if (s == NULL || f == NULL)
+		return NULL;
 	mapped = (char *)malloc(ft_strlen(s) + 1);
-	if (mapped == (void *)0)
-		return (void *)0;
+	if (mapped == NULL)
+		return NULL;
 	i = 0;
 	while (s[i] != '\0')
 	{

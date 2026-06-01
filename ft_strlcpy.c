@@ -1,8 +1,8 @@
 #include <libft.h>
 
-unsigned int	ft_strlcpy(char *dest, const char *src, unsigned int size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	unsigned int i;
+	size_t	i;
 
 	i = 0;
 	if (size > 0)
