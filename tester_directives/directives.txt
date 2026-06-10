@@ -1,3 +1,0 @@
-Compare every func to its c mirror
-Test every possible edge case with different unitary tests
-(Add a explanation for every test type)

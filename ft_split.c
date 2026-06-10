@@ -6,11 +6,32 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:26:13 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:34:19 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/03 19:37:04 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+int	ft_count_words(const char *s, char splitter)
+{
+	size_t	count;
+	size_t	i;
+
+	count = 0;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		while (s[i] == splitter)
+			i++;
+		if (s[i] != '\0')
+		{
+			count++;
+			while (s[i] != splitter && s[i] != '\0')
+				i++;
+		}
+	}
+	return (count);
+}
 
 char	**ft_split(const char *s, char c)
 {
@@ -39,25 +60,4 @@ char	**ft_split(const char *s, char c)
 	}
 	split[j] = NULL;
 	return (split);
-}
-
-int	ft_count_words(const char *s, char splitter)
-{
-	size_t	count;
-	size_t	i;
-
-	count = 0;
-	i = 0;
-	while (s[i] != '\0')
-	{
-		while (s[i] == splitter)
-			i++;
-		if (s[i] != '\0')
-		{
-			count++;
-			while (s[i] != splitter && s[i] != '\0')
-				i++;
-		}
-	}
-	return (count);
 }
