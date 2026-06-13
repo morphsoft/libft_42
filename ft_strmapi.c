@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:27:41 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:37:34 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:52:49 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {

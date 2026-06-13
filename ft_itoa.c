@@ -6,11 +6,27 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:26:40 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:26:41 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:48:02 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
+
+void	ft_add_negative_sign_or_zero(char *str, int n)
+{
+	if (n == 0)
+		str[0] = '0';
+	else if (n < 0)
+		str[0] = '-';
+}
+
+int	ft_is_negative(int n)
+{
+	if (n < 0)
+		return (-1);
+	else
+		return (1);
+}
 
 char	*ft_itoa(int n)
 {
@@ -38,20 +54,4 @@ char	*ft_itoa(int n)
 		n /= 10;
 	}
 	return (str);
-}
-
-void	ft_add_negative_sign_or_zero(char *str, int n)
-{
-	if (n == 0)
-		str[0] = '0';
-	else if (n < 0)
-		str[0] = '-';
-}
-
-int	ft_is_negative(int n)
-{
-	if (n < 0)
-		return (-1);
-	else
-		return (1);
 }

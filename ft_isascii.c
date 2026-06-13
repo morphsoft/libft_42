@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:26:33 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:26:34 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:47:44 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

@@ -6,24 +6,24 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:26:57 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:26:58 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:49:23 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
 	t_list	*new_node;
 
-	if (lst == NULL || f == NULL)
+	if (lst == NULL || f == NULL || del == NULL)
 		return (NULL);
 	new_list = NULL;
 	while (lst != NULL)
 	{
 		new_node = ft_lstnew(f(lst->content));
-		if (new_node == NULL)
+		if (new_node == NULL || new_node->content == NULL)
 		{
 			ft_lstclear(&new_list, del);
 			return (NULL);

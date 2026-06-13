@@ -6,21 +6,21 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:26:24 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:26:25 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:47:24 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned int	total_size;
-	void			*ptr;
+	void	*ptr;
 
-	total_size = nmemb * size;
-	ptr = malloc(total_size);
+	if (count != 0 && size > (size_t)-1 / count)
+		return (NULL);
+	ptr = malloc(count * size);
 	if (ptr == NULL)
 		return (ptr);
-	ft_bzero(ptr, total_size);
+	ft_bzero(ptr, count * size);
 	return (ptr);
 }

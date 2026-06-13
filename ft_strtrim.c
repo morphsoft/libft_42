@@ -6,17 +6,17 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:27:50 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:52:18 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:53:26 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strtrim(const char *s1, const char *set)
 {
-	char		*trimmed;
-	size_t		start;
-	size_t		end;
+	char	*trimmed;
+	size_t	start;
+	size_t	end;
 
 	if (s1 == NULL || set == NULL)
 		return (NULL);

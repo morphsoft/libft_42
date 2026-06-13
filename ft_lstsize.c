@@ -6,15 +6,15 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:27:02 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:27:03 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:55:24 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-size_t	ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-	size_t	count;
+	int	count;
 
 	count = 0;
 	while (lst != NULL)

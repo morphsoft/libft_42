@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:27:06 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:27:07 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:50:03 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 {

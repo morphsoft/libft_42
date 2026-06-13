@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:26:36 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:26:37 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:47:46 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

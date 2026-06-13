@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:27:04 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:27:05 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:49:52 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *ptr, int character, size_t num)
 {

@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:27:34 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:38:36 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:52:17 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {

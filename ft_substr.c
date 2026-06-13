@@ -6,16 +6,16 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:40:38 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:40:53 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:53:34 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	char		*substr;
-	size_t		i;
+	char	*substr;
+	size_t	i;
 
 	if (s == NULL)
 		return (NULL);

@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:27:30 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:38:07 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:51:52 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

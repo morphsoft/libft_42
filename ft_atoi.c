@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:26:20 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:26:21 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:46:42 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

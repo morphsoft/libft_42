@@ -6,13 +6,13 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:26:22 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:26:23 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:47:09 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-void	ft_bzero(void *s, unsigned int n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
 

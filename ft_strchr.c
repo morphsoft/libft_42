@@ -6,11 +6,11 @@
 /*   By: hvaini-d <hvaini-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/01 14:27:27 by hvaini-d          #+#    #+#             */
-/*   Updated: 2026/06/01 14:27:28 by hvaini-d         ###   ########.fr       */
+/*   Updated: 2026/06/13 14:51:41 by hvaini-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int character)
 {
